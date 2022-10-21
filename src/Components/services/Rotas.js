@@ -40,6 +40,11 @@ const Nav = styled.nav`
       margin: 5px 30px;
     }
 
+    li:hover{
+        margin: 10px 15px;
+        padding: 5px 13px;
+    }
+
   }
 
   @media (max-width: 500px){
@@ -47,6 +52,11 @@ const Nav = styled.nav`
     li{
       font-size: 17px;
       margin: 5px 17px;
+    }
+
+    li:hover{
+      margin: 10px 11px;
+      padding: 5px 4px;
     }
 
   }
