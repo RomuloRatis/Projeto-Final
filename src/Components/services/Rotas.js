@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import Contatos from "../Pages/Contatos";
 import Projetos from "../Pages/Projetos";
 import Home from "../Pages/Home";
-import Onupage from "../Pages/Onu/Onupage";
+import Onupage from "../Pages/Onupage";
 import styled from "styled-components"
 
 const Nav = styled.nav`
-  background-color: #B4BEC9;
+  background-color: #F0E0CE;
   diplay: flex;
   width: 100%;
   
@@ -28,7 +28,7 @@ const Nav = styled.nav`
   }
 
   li:hover{
-    border: 2px solid #0F6466;
+    border: 2px solid #6C93A3;
     padding: 5px 15px;
     margin: 10px 38px;
   }

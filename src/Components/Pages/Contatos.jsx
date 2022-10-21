@@ -6,16 +6,20 @@ import Github from "../Images/Github.png"
 import styled from "styled-components"
 
 const Container = styled.main`
+  
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 
   div{
     display: flex;
     justify-content: center;
     margin-top: 200px;
+    border: 2px solid #FFFAF5;
   }
 
   img{

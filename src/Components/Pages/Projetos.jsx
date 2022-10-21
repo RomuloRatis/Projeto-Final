@@ -1,42 +1,54 @@
 import React from "react"
 import Starwars from "../Images/Starwars.jpg"
+import LOL from "../Images/LOL.jpg"
 import styled from "styled-components"
 
 const Container = styled.div`
+  
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 100px;
-
-
-  h2{
-    font-size: 30px;
-    font-family: 'Roboto Condensed', sans-serif;
-  }
+  margin-top: 80px;
 
   img{
-    width: 450px;
-    margin-top: 15px;
+    width: 650px;
+    margin: 15px;
+    border: 2px solid #ffffff;
   }
 
   img:hover{
     cursor: pointer;
-    transform: scale(1.04);
+    transform: scale(1.02);
   }
 
-  @media (max-width: 500px){
+  @media (max-width: 1370px){
+
+      img{
+        width: 500px
+      }
+  }
+
+  @media (max-width: 1080px){
+
+     flex-direction: column;
+
+     img{
+        width: 600px;
+     }
+  }
+
+  @media (max-width: 685px){
 
     img{
-      width: 350px
+       width: 450px;
     }
-  }
+ }
 
-  @media (max-width: 365px){
+  @media (max-width: 685px){
 
-    img{
-      width: 275px
+     img{
+        width: 320px;
     }
   }
 `
@@ -44,9 +56,11 @@ const Container = styled.div`
 export default function Projetos(){
   return(
     <Container>
-      <h2>Star Wars</h2>
-      <a href="">
+      <a href="https://github.com/RomuloRatis/Desafio-Final" target="_blank">
         <img src={Starwars} alt="star wars"/>
+      </a>
+      <a href="https://github.com/RomuloRatis/Layout-lol" target="_blank">
+        <img src={LOL} alt="league of legends"/>
       </a>
     </Container>
   )
